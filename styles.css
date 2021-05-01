@@ -1,0 +1,159 @@
+* {
+    margin: 0; padding: 0;
+    font-family: minion-pro;
+}
+  
+body{
+    background-color: black;
+    animation: fadeInAnimation ease 1.0s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+
+.header{
+    height: 90vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    
+}
+
+.author{
+    padding: 3%;
+    color: white;
+}
+
+.title{
+    color: white;
+    font-size: 5vw;
+}
+
+.frame {
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 4%;
+
+    padding-bottom: 5%;
+    opacity: 0;
+
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.special {
+    padding-bottom: 0%;
+}
+
+.in-view {
+    opacity: 1;
+}
+
+.photo-left-landscape {
+    grid-column: 1;
+    text-align: right;
+    margin: 0;
+}
+
+.photo-right-landscape {
+    grid-column: 2;
+    text-align: left;
+}
+
+.photo-right-portrait {
+    grid-column: 2;
+    text-align: left;
+}
+
+.image-border-left-landscape {
+    width: 100%;
+    height: fit-content;
+    padding: 2%;    
+    border: 1px solid white;
+    display: flex;
+    justify-self: flex-end;
+}
+
+.image-border-right-portrait {
+    width: 70%;
+    height: fit-content;
+    padding: 2%;    
+    border: 1px solid white;
+    display: flex;
+    justify-self: flex-start;
+}
+
+.image-border-right-landscape {
+    width: 100%;
+    height: fit-content;
+    padding: 2%;    
+    border: 1px solid white;
+    display: flex;
+    justify-self: flex-start;
+}
+
+.landscape {
+    margin: 0;
+    width: 100%;
+}
+
+.portrait {
+    margin: 0;
+    width: 100%;
+}
+
+.caption-right {
+    grid-column: 2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.caption-left {
+    grid-column: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+h3 {
+    width: 70vw;
+    font-size: 25px;
+    line-height: 40px;
+    padding-bottom: 5%;
+    font-weight: 100;
+    color: white;
+}
+
+/* sets different rules for narrower screens (usually meaning mobile) If
+you want to quickly test how this works on your computer, just make your 
+browser window really skinny */
+@media screen and (max-width: 800px) {
+
+    .logo{
+        font-size: 20px;
+    }
+    
+  }
