@@ -5,9 +5,9 @@
   
 body{
     background-color: black;
-    animation: fadeInAnimation ease 1.0s; 
+    /* animation: fadeInAnimation ease 1.0s; 
     animation-iteration-count: 1; 
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 .header{
@@ -29,45 +29,44 @@ body{
     
 }
 
-.author{
+.author {
     padding: 3%;
     color: white;
 }
 
-.title{
+.title {
     color: white;
     font-size: 5vw;
 }
 
 .frame {
     width: 90vw;
-    margin: 0 auto;
+    margin: 10% auto;
     display: grid;
     grid-template-columns: 48% 48%;
     grid-gap: 4%;
 
-    padding-bottom: 5%;
-    opacity: 0;
+    /* padding-bottom: 5%;
+    opacity: 0; */
 
-    -webkit-transition: all 0.2s ease;
+    /* -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    transition: all 0.2s ease; */
 }
 
-.special {
+/* .special {
     padding-bottom: 0%;
 }
 
 .in-view {
     opacity: 1;
-}
+} */
 
 .photo-left-landscape {
     grid-column: 1;
     text-align: right;
-    margin: 0;
 }
 
 .photo-right-landscape {
@@ -83,8 +82,8 @@ body{
 .image-border-left-landscape {
     width: 100%;
     height: fit-content;
-    padding: 2%;    
-    border: 1px solid white;
+    /* padding: 2%;    
+    border: 1px solid white; */
     display: flex;
     justify-self: flex-end;
 }
@@ -92,8 +91,8 @@ body{
 .image-border-right-portrait {
     width: 70%;
     height: fit-content;
-    padding: 2%;    
-    border: 1px solid white;
+    /* padding: 2%;    
+    border: 1px solid white; */
     display: flex;
     justify-self: flex-start;
 }
@@ -101,8 +100,8 @@ body{
 .image-border-right-landscape {
     width: 100%;
     height: fit-content;
-    padding: 2%;    
-    border: 1px solid white;
+    /* padding: 2%;    
+    border: 1px solid white; */
     display: flex;
     justify-self: flex-start;
 }
@@ -110,11 +109,15 @@ body{
 .landscape {
     margin: 0;
     width: 100%;
+    max-width: 600px;
+    max-height: 400px;
 }
 
 .portrait {
     margin: 0;
     width: 100%;
+    max-width: 400px;
+    max-height: 600px;
 }
 
 .caption-right {
@@ -125,6 +128,7 @@ body{
     justify-content: flex-start;
     margin: 0;
     font-size: 1.5rem;
+    overflow: scroll;
 }
 
 .caption-left {
@@ -136,6 +140,7 @@ body{
     text-align: right;
     margin: 0;
     font-size: 1.5rem;
+    overflow: scroll;
 }
 
 h3 {
@@ -147,13 +152,102 @@ h3 {
     color: white;
 }
 
+.dropcap {
+    float: left;
+    font-size: 400%;
+    margin-top: 14px;
+    margin-right: 5px;
+    color: white;
+}
+
 /* sets different rules for narrower screens (usually meaning mobile) If
 you want to quickly test how this works on your computer, just make your 
 browser window really skinny */
 @media screen and (max-width: 800px) {
 
-    .logo{
+    .logo {
         font-size: 20px;
     }
+
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .frame {
+        width: 90vw;
+        margin: 20% auto;
+        display: unset;
+        grid-template-columns: unset;
+        grid-gap: unset;
+    }
+
+    .header {
+        margin-bottom: 25%;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .dropcap {
+        margin-top: 20px;
+    }
+
+    .forward {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .photo-left-landscape {
+        grid-column: unset;
+        text-align: center;
+        height: fit-content;
+    }
     
-  }
+    .photo-right-landscape {
+        grid-column: unset;
+        text-align: center;
+        height: fit-content;
+    }
+    
+    .photo-right-portrait {
+        grid-column: unset;
+        text-align: center;
+        height: fit-content;
+    }
+
+    .caption-right {
+        flex: 1;
+        grid-column: unset;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 5% 0 0 0;
+        font-size: 1.2rem;
+        overflow: unset;
+    }
+    
+    .caption-left {
+        flex: 1;
+        grid-column: unset;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+        margin: 5% 0 0 0;
+        font-size: 1.2rem;
+        overflow: unset;
+    }
+    
+    .name {
+        text-align: center;
+        justify-content: center;
+    }
+}
