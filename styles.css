@@ -12,12 +12,25 @@ body{
 
 .header{
     height: 90vh;
+    margin-bottom: 10vh;
     grid-column-start: 1;
     grid-column-end: 3;
   
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description{
+    height: fit-content;
+    padding-bottom: 10vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  
+    text-align: center;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -184,7 +197,11 @@ browser window really skinny */
     }
 
     .header {
-        margin-bottom: 25%;
+        margin-bottom: 50%;
+    }
+
+    .description {
+        margin-bottom: 10%;
     }
 
     h3 {
