@@ -74,23 +74,40 @@ body{
     width: 75%;
     height: fit-content;
     left: 5%;
+    max-height: 1400px;
 }
 
 .landscape-wide {
-    width: 100%;
+    width: 75%;
     height: fit-content;
+    max-height: 700px;
 }
 
 .portrait {
     width: 100%;
     height: fit-content;
     left: 0%;
+    max-height: 1050px;
 }
 
 .landscape {
     width: 100%;
     height: fit-content;
     left: 0%;
+    max-height: 550px;
+}
+
+.special-one {
+    width: 100%; 
+    max-height: 900px;
+}
+
+.special-two {
+    max-height: 500px;
+}
+
+.special-three {
+    max-height: 900px;
 }
 
 .caption-center {
@@ -224,5 +241,49 @@ browser window really skinny */
         color: white;
         font-size: 1.75rem; 
         margin-top: 3%;
+    }
+
+    .portrait-wide {
+        width: 100%;
+        height: fit-content;
+        left: 5%;
+        max-height: 700px;
+    }
+    
+    .landscape-wide {
+        width: 100%;
+        height: fit-content;
+        max-height: 450px;
+    }
+    
+    .portrait {
+        width: 100%;
+        height: fit-content;
+        left: 0%;
+        max-height: 750px;
+    }
+    
+    .landscape {
+        width: 100%;
+        height: fit-content;
+        left: 0%;
+        max-height: 450px;
+    }    
+
+    .special-one {
+        width: 100%; 
+        max-height: 380px;
+    }
+    
+    .special-two {
+        max-height: 500px;
+    }
+    
+    .special-three {
+        max-height: 900px;
+    }
+
+    .special-four {
+        max-height: 800px;
     }
 }
