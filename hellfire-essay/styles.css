@@ -1,0 +1,228 @@
+* {
+    margin: 0; padding: 0;
+    font-family: minion-pro;
+}
+  
+body{
+    background-color: black;
+}
+
+.header{
+    height: 90vh;
+    margin-bottom: 10vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description{
+    height: fit-content;
+    padding-bottom: 10vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.author {
+    padding: 3%;
+    color: white;
+}
+
+.title {
+    color: white;
+    font-size: 5vw;
+}
+
+.frame-one {
+    width: 90vw;
+    margin: 10% auto;
+    display: grid;
+    grid-template-columns: 40% 56%;
+    grid-gap: 4%;
+}
+
+.frame-two {
+    width: 90vw;
+    margin: 10% auto;
+    display: grid;
+    grid-template-columns: 56% 40%;
+    grid-gap: 4%;
+}
+
+.wide-frame {
+    width: 90vw;
+    margin: 0 auto;
+    height: fit-content;
+}
+
+.portrait-wide {
+    width: 75%;
+    height: fit-content;
+    left: 5%;
+}
+
+.landscape-wide {
+    width: 100%;
+    height: fit-content;
+}
+
+.portrait {
+    width: 100%;
+    height: fit-content;
+    left: 0%;
+}
+
+.landscape {
+    width: 100%;
+    height: fit-content;
+    left: 0%;
+}
+
+.caption-center {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 2.25rem; 
+    margin-top: 3%;
+}
+
+.caption-right {
+    grid-column: 2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    font-size: 2.25rem;
+}
+
+.caption-left {
+    grid-column: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+    margin: 0;
+    font-size: 2.25rem; 
+}
+
+h3 {
+    width: 70vw;
+    font-size: 25px;
+    line-height: 40px;
+    padding-bottom: 5%;
+    font-weight: 100;
+    color: white;
+}
+
+/* sets different rules for narrower screens (usually meaning mobile) If
+you want to quickly test how this works on your computer, just make your 
+browser window really skinny */
+@media screen and (max-width: 800px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .frame-one {
+        display: unset;
+        grid-template-columns: unset;
+        grid-gap: unset;
+        width: 90vw;
+        margin: 10% auto;
+    }
+
+    .frame-two {
+        display: unset;
+        grid-template-columns: unset;
+        grid-gap: unset;
+        width: 90vw;
+        margin: 10% auto;
+    }
+
+    .header {
+        margin-bottom: 50%;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .forward {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .wide-frame {
+        width: 90vw;
+        margin: 0 auto;
+        height: fit-content;
+    }
+    
+    .portrait-wide {
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .landscape-wide {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .caption-center {
+        width: 94%;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        font-size: 1.75rem; 
+        margin-top: 3%;
+    }
+
+    .caption-right {
+        width: 94%;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 1.75rem; 
+        margin-top: 3%;
+    }
+    
+    .caption-left {
+        width: 94%;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 1.75rem; 
+        margin-top: 3%;
+    }
+}
