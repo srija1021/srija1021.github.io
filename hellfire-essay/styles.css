@@ -5,6 +5,316 @@
   
 body{
     background-color: black;
+    /* animation: fadeInAnimation ease 1.0s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; */
+}
+
+.header{
+    height: 90vh;
+    margin-bottom: 10vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description{
+    height: fit-content;
+    padding-bottom: 10vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    
+}
+
+.author {
+    padding: 3%;
+    color: white;
+}
+
+.title {
+    color: white;
+    font-size: 5vw;
+}
+
+.frame {
+    width: 90vw;
+    margin: 10% auto;
+    display: grid;
+
+    /* padding-bottom: 5%;
+    opacity: 0; */
+
+    /* -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease; */
+}
+
+.image-right {
+    grid-template-columns: 40% 56%;
+    grid-gap: 4%;
+}
+
+.image-right-ls {
+    grid-template-columns: 32% 64%;
+    grid-gap: 4%;
+}
+
+.image-left-ls {
+    grid-template-columns: 64% 32%;
+    grid-gap: 4%;
+}
+
+.wide {
+    grid-template-columns: 0% 100%;
+    grid-gap: 0%;
+
+    /* padding-bottom: 5%;
+    opacity: 0; */
+
+    /* -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease; */
+}
+
+/* .special {
+    padding-bottom: 0%;
+}
+
+.in-view {
+    opacity: 1;
+} */
+
+.photo-left-landscape {
+    grid-column: 1;
+    text-align: right;
+}
+
+.photo-right-landscape {
+    grid-column: 2;
+    text-align: left;
+}
+
+.photo-right-portrait {
+    grid-column: 2;
+    text-align: left;
+}
+
+.image-border-left-landscape {
+    width: 100%;
+    height: fit-content;
+    /* padding: 2%;    
+    border: 1px solid white; */
+    display: flex;
+    justify-self: flex-end;
+}
+
+.image-border-right-portrait {
+    width: 70%;
+    height: fit-content;
+    /* padding: 2%;    
+    border: 1px solid white; */
+    display: flex;
+    justify-self: flex-start;
+}
+
+.image-border-right-landscape {
+    width: 100%;
+    height: fit-content;
+    /* padding: 2%;    
+    border: 1px solid white; */
+    display: flex;
+    justify-self: flex-start;
+}
+
+.landscape {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 2400px;
+    max-height: 1600px;
+}
+
+.portrait {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 1600px;
+    max-height: 2400px;
+}
+
+.caption-right {
+    grid-column: 2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 0;
+    font-size: 2.25rem;
+    /* overflow: scroll; */
+}
+
+.caption-left {
+    grid-column: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+    margin: 0;
+    font-size: 2.25rem;
+    /* overflow: scroll; */
+}
+
+.caption-center {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 2.25rem; 
+    margin-top: 3%;
+}
+
+h3 {
+    width: 70vw;
+    font-size: 25px;
+    line-height: 40px;
+    padding-bottom: 5%;
+    font-weight: 100;
+    color: white;
+}
+
+/* sets different rules for narrower screens (usually meaning mobile) If
+you want to quickly test how this works on your computer, just make your 
+browser window really skinny */
+@media screen and (max-width: 800px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .frame {
+        width: 90vw;
+        margin: 20% auto;
+        display: unset;
+        grid-template-columns: unset;
+        grid-gap: unset;
+    }
+
+    .header {
+        margin-bottom: 50%;
+    }
+
+    .description {
+        margin-bottom: 10%;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .dropcap {
+        margin-top: 20px;
+    }
+
+    .forward {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .photo-left-landscape {
+        grid-column: unset;
+        text-align: center;
+        height: fit-content;
+    }
+    
+    .photo-right-landscape {
+        grid-column: unset;
+        text-align: center;
+        height: fit-content;
+    }
+    
+    .photo-right-portrait {
+        grid-column: unset;
+        text-align: center;
+        height: fit-content;
+    }
+
+    .image-border-right-portrait {
+        width: 100%;
+        height: fit-content;
+        /* padding: 2%;    
+        border: 1px solid white; */
+        display: flex;
+        justify-self: flex-start;
+    }
+
+    .caption-right {
+        flex: 1;
+        grid-column: unset;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 5% 0 0 0;
+        font-size: 1.75rem;
+    }
+    
+    .caption-left {
+        flex: 1;
+        grid-column: unset;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 5% 0 0 0;
+        font-size: 1.75rem;
+    }
+
+    .caption-center {
+        font-size: 1.75rem;
+    }
+}
+
+
+/* * {
+    margin: 0; padding: 0;
+    font-family: minion-pro;
+}
+  
+body{
+    background-color: black;
 }
 
 .header{
@@ -147,12 +457,12 @@ h3 {
     padding-bottom: 5%;
     font-weight: 100;
     color: white;
-}
+} */
 
 /* sets different rules for narrower screens (usually meaning mobile) If
 you want to quickly test how this works on your computer, just make your 
 browser window really skinny */
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
 
     .logo {
         font-size: 20px;
@@ -287,3 +597,4 @@ browser window really skinny */
         max-height: 800px;
     }
 }
+ */
