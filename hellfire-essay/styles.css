@@ -5,9 +5,6 @@
   
 body{
     background-color: black;
-    /* animation: fadeInAnimation ease 1.0s; 
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards; */
 }
 
 .header{
@@ -25,11 +22,6 @@ body{
 
 .description{
     height: fit-content;
-    padding-bottom: 10vh;
-    grid-column-start: 1;
-    grid-column-end: 3;
-  
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,9 +49,6 @@ body{
     margin: 10% auto;
     display: grid;
 
-    /* padding-bottom: 5%;
-    opacity: 0; */
-
     /* -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -86,23 +75,12 @@ body{
     grid-template-columns: 0% 100%;
     grid-gap: 0%;
 
-    /* padding-bottom: 5%;
-    opacity: 0; */
-
     /* -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
     transition: all 0.2s ease; */
 }
-
-/* .special {
-    padding-bottom: 0%;
-}
-
-.in-view {
-    opacity: 1;
-} */
 
 .photo-left-landscape {
     grid-column: 1;
@@ -171,7 +149,6 @@ body{
     text-align: left;
     margin: 0;
     font-size: 2.25rem;
-    /* overflow: scroll; */
 }
 
 .caption-left {
@@ -183,13 +160,12 @@ body{
     text-align: right;
     margin: 0;
     font-size: 2.25rem;
-    /* overflow: scroll; */
 }
 
 .caption-center {
     width: 90%;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     color: white;
     font-size: 2.25rem; 
     margin-top: 5%;
@@ -197,11 +173,10 @@ body{
 
 h3 {
     width: 70vw;
-    font-size: 25px;
-    line-height: 40px;
-    padding-bottom: 5%;
+    font-size: 2.25rem;
     font-weight: 100;
     color: white;
+    text-align: left;
 }
 
 /* sets different rules for narrower screens (usually meaning mobile) If
@@ -234,7 +209,8 @@ browser window really skinny */
     }
 
     h3 {
-        font-size: 1.4rem;
+        font-size: 1.75rem;
+        text-align: left;
     }
 
     .dropcap {
@@ -272,8 +248,6 @@ browser window really skinny */
     .image-border-right-portrait {
         width: 100%;
         height: fit-content;
-        /* padding: 2%;    
-        border: 1px solid white; */
         display: flex;
         justify-self: flex-start;
     }
@@ -285,8 +259,8 @@ browser window really skinny */
         display: flex;
         align-items: center;
         justify-content: center;
-        text-align: center;
-        margin: 5% 0 0 0;
+        text-align: left;
+        margin: 5% 5% 0% 5%;
         font-size: 1.75rem;
     }
     
@@ -297,304 +271,14 @@ browser window really skinny */
         display: flex;
         align-items: center;
         justify-content: center;
-        text-align: center;
-        margin: 5% 0 0 0;
+        text-align: left;
+        margin: 5% 5% 0% 5%;
         font-size: 1.75rem;
     }
 
     .caption-center {
         font-size: 1.75rem;
+        text-align: left;
     }
 }
 
-
-/* * {
-    margin: 0; padding: 0;
-    font-family: minion-pro;
-}
-  
-body{
-    background-color: black;
-}
-
-.header{
-    height: 90vh;
-    margin-bottom: 10vh;
-    grid-column-start: 1;
-    grid-column-end: 3;
-  
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.description{
-    height: fit-content;
-    padding-bottom: 10vh;
-    grid-column-start: 1;
-    grid-column-end: 3;
-  
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo a{
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-.author {
-    padding: 3%;
-    color: white;
-}
-
-.title {
-    color: white;
-    font-size: 5vw;
-}
-
-.frame-one {
-    width: 90vw;
-    margin: 10% auto;
-    display: grid;
-    grid-template-columns: 40% 56%;
-    grid-gap: 4%;
-}
-
-.frame-two {
-    width: 90vw;
-    margin: 10% auto;
-    display: grid;
-    grid-template-columns: 56% 40%;
-    grid-gap: 4%;
-}
-
-.wide-frame {
-    width: 90vw;
-    margin: 0 auto;
-    height: fit-content;
-}
-
-.portrait-wide {
-    width: 75%;
-    height: fit-content;
-    left: 5%;
-    max-height: 1400px;
-}
-
-.landscape-wide {
-    width: 75%;
-    height: fit-content;
-    max-height: 700px;
-}
-
-.portrait {
-    width: 100%;
-    height: fit-content;
-    left: 0%;
-    max-height: 1050px;
-}
-
-.landscape {
-    width: 100%;
-    height: fit-content;
-    left: 0%;
-    max-height: 550px;
-}
-
-.special-one {
-    width: 100%; 
-    max-height: 900px;
-}
-
-.special-two {
-    max-height: 500px;
-}
-
-.special-three {
-    max-height: 900px;
-}
-
-.caption-center {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    color: white;
-    font-size: 2.25rem; 
-    margin-top: 3%;
-}
-
-.caption-right {
-    grid-column: 2;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 0;
-    font-size: 2.25rem;
-}
-
-.caption-left {
-    grid-column: 1;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    text-align: right;
-    margin: 0;
-    font-size: 2.25rem; 
-}
-
-h3 {
-    width: 70vw;
-    font-size: 25px;
-    line-height: 40px;
-    padding-bottom: 5%;
-    font-weight: 100;
-    color: white;
-} */
-
-/* sets different rules for narrower screens (usually meaning mobile) If
-you want to quickly test how this works on your computer, just make your 
-browser window really skinny */
-/* @media screen and (max-width: 800px) {
-
-    .logo {
-        font-size: 20px;
-    }
-
-    .title {
-        font-size: 3.5rem;
-    }
-
-    .frame-one {
-        display: unset;
-        grid-template-columns: unset;
-        grid-gap: unset;
-        width: 90vw;
-        margin: 10% auto;
-    }
-
-    .frame-two {
-        display: unset;
-        grid-template-columns: unset;
-        grid-gap: unset;
-        width: 90vw;
-        margin: 10% auto;
-    }
-
-    .header {
-        margin-bottom: 50%;
-    }
-
-    h3 {
-        font-size: 1.4rem;
-    }
-
-    .forward {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .reverse {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .wide-frame {
-        width: 90vw;
-        margin: 0 auto;
-        height: fit-content;
-    }
-    
-    .portrait-wide {
-        width: 100%;
-        height: fit-content;
-    }
-    
-    .landscape-wide {
-        width: 100%;
-        height: fit-content;
-    }
-
-    .caption-center {
-        width: 94%;
-        margin: 0 auto;
-        text-align: center;
-        color: white;
-        font-size: 1.75rem; 
-        margin-top: 3%;
-    }
-
-    .caption-right {
-        width: 94%;
-        margin: 0 auto;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 1.75rem; 
-        margin-top: 3%;
-    }
-    
-    .caption-left {
-        width: 94%;
-        margin: 0 auto;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 1.75rem; 
-        margin-top: 3%;
-    }
-
-    .portrait-wide {
-        width: 100%;
-        height: fit-content;
-        left: 5%;
-        max-height: 700px;
-    }
-    
-    .landscape-wide {
-        width: 100%;
-        height: fit-content;
-        max-height: 450px;
-    }
-    
-    .portrait {
-        width: 100%;
-        height: fit-content;
-        left: 0%;
-        max-height: 750px;
-    }
-    
-    .landscape {
-        width: 100%;
-        height: fit-content;
-        left: 0%;
-        max-height: 450px;
-    }    
-
-    .special-one {
-        width: 100%; 
-        max-height: 380px;
-    }
-    
-    .special-two {
-        max-height: 500px;
-    }
-    
-    .special-three {
-        max-height: 900px;
-    }
-
-    .special-four {
-        max-height: 800px;
-    }
-}
- */
